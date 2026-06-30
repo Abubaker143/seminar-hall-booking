@@ -1,0 +1,50 @@
+/* Body with background */
+body {
+  margin: 0;
+  min-height: 100vh;
+  /* App.css-la indha line-a maathu */
+background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('./assets/photos/collegepic.jpg'); /* Background image-a public folder-la podu */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.page-wrapper { display: flex; flex-direction: column; align-items: center; }
+
+/* Header */
+.college-header { text-align: center; margin-bottom: 30px; }
+.logo { width: 100px; border-radius: 50%; border: 3px solid #ffcc00; margin-bottom: 10px; }
+.college-header h2 { color: #ffcc00; margin: 5px 0; }
+
+/* Containers */
+.booking-container, .history-container {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #ffcc00;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.2);
+}
+
+/* Form Styles */
+label { display: block; font-weight: bold; margin-top: 10px; color: #ffcc00; font-size: 0.9rem; }
+input {
+  width: 100%; padding: 12px; margin: 8px 0; border-radius: 5px;
+  border: 1px solid #444; background: #2a2a2a; color: white; box-sizing: border-box;
+}
+button {
+  background: #ffcc00; width: 100%; padding: 12px; border: none;
+  border-radius: 5px; font-weight: bold; cursor: pointer; margin-top: 15px; color: black;
+}
+button:hover { background: #e6b800; }
+
+/* Table Styles */
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th { text-align: left; padding: 12px; border-bottom: 2px solid #ffcc00; color: #ffcc00; }
+td { padding: 12px; border-bottom: 1px solid #333; font-size: 0.9rem; }
+tr:hover { background: #2a2a2a; }
